@@ -10,17 +10,17 @@ function initImages() {
         img_mainMenu_playGame = new Image();
         img_mainMenu_loadGame = new Image();
         img_mainMenu_levelSelect = new Image();
-        //img_mainMenu_moreGames   = new Image();
+        img_mainMenu_moreGames   = new Image();
 
         img_mainMenu_playGame.src    = "images/main_menu_play_game.png";
         img_mainMenu_loadGame.src    = "images/main_menu_load_game.png";
         img_mainMenu_levelSelect.src = "images/main_menu_level_select.png";
-        //img_mainMenu_moreGames.src   = "images/main_menu_more_games.png";
+        img_mainMenu_moreGames.src   = "images/main_menu_more_games.png";
 
         img_mainMenu_playGame.addEventListener   ("load", imageLoaded);
         img_mainMenu_loadGame.addEventListener   ("load", imageLoaded);
         img_mainMenu_levelSelect.addEventListener("load", imageLoaded);
-        //img_mainMenu_moreGames.addEventListener  ("load", imageLoaded);
+        img_mainMenu_moreGames.addEventListener  ("load", imageLoaded);
     }
 }
 
