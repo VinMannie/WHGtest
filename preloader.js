@@ -10,17 +10,17 @@ function initImages() {
         img_mainMenu_playGame = new Image();
         img_mainMenu_loadGame = new Image();
         img_mainMenu_levelSelect = new Image();
-        img_mainMenu_moreGames   = new Image();
+        //img_mainMenu_moreGames   = new Image();
 
         img_mainMenu_playGame.src    = "images/main_menu_play_game.png";
         img_mainMenu_loadGame.src    = "images/main_menu_load_game.png";
         img_mainMenu_levelSelect.src = "images/main_menu_level_select.png";
-        img_mainMenu_moreGames.src   = "images/main_menu_more_games.png";
+        //img_mainMenu_moreGames.src   = "images/main_menu_more_games.png";
 
         img_mainMenu_playGame.addEventListener   ("load", imageLoaded);
         img_mainMenu_loadGame.addEventListener   ("load", imageLoaded);
         img_mainMenu_levelSelect.addEventListener("load", imageLoaded);
-        img_mainMenu_moreGames.addEventListener  ("load", imageLoaded);
+        //img_mainMenu_moreGames.addEventListener  ("load", imageLoaded);
     }
 }
 
@@ -129,7 +129,7 @@ function drawPreloader() {
 	canvas.textAlign = "left";
 	
 	if (loadedImages < TOTAL_IMAGES) {
-		canvas.fillText("Loading Images... (" + loadedImages + " / " + TOTAL_IMAGES + ")", cwh(CANVAS_WIDTH / 2 - loadBarWidth / 2) + os.x, cwh(245) + os.y);
+		canvas.fillText("Loading Images... (" + loadedImages + " / 3)", cwh(CANVAS_WIDTH / 2 - loadBarWidth / 2) + os.x, cwh(245) + os.y);
 	} else if (loadedSounds < TOTAL_SOUNDS) {
 		canvas.fillText("Loading Sounds... (" + loadedSounds + " / " + TOTAL_SOUNDS + ")", cwh(CANVAS_WIDTH / 2 - loadBarWidth / 2) + os.x, cwh(245) + os.y);
 	} else {
