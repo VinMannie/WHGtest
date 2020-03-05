@@ -129,7 +129,7 @@ function drawPreloader() {
 	canvas.textAlign = "left";
 	
 	if (loadedImages < TOTAL_IMAGES) {
-		canvas.fillText("Loading Images... (" + loadedImages + " / 3)", cwh(CANVAS_WIDTH / 2 - loadBarWidth / 2) + os.x, cwh(245) + os.y);
+		canvas.fillText("Loading Images... (" + loadedImages + " / " + TOTAL_IMAGES + ")", cwh(CANVAS_WIDTH / 2 - loadBarWidth / 2) + os.x, cwh(245) + os.y);
 	} else if (loadedSounds < TOTAL_SOUNDS) {
 		canvas.fillText("Loading Sounds... (" + loadedSounds + " / " + TOTAL_SOUNDS + ")", cwh(CANVAS_WIDTH / 2 - loadBarWidth / 2) + os.x, cwh(245) + os.y);
 	} else {
