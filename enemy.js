@@ -6,7 +6,7 @@ var enemies = [
 		new simpleEnemy(550, 250, 260, 260, 7, 0),
 		new simpleEnemy(250, 550, 300, 300, 7, 0),
 		new simpleEnemy(550, 250, 340, 340, 7, 0),
-		new simpleEnemy(250, 550, 380, 380, 7, 0)
+		new simpleEnemy(250, 550, 380, 380, 10, 0)
 	],
 
 	// level 2
